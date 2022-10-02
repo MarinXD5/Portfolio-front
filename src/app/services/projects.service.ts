@@ -1,25 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
-import { Projects } from '../common/projects';
+import { Projects } from 'app/common/projects';
+import { Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class ProjectsService {
-  private allProjectsURL = 'http://localhost:8080/list/projects';
+  private allProjectsURL: string = 'http://localhost:8080/list/projects';
 
   constructor(private httpClient: HttpClient) {}
 
-  getAllProjectsList(): Observable<Projects[]> {
-    return this.httpClient
-      .get<GetResponse>(this.allProjectsURL)
-      .pipe(map((response) => response._embedded.projects));
+  getAllProjects(): Observable<any>{
+    return this.httpClient.get<any>(this.allProjectsURL);
   }
-}
-
-interface GetResponse {
-  _embedded: {
-    projects: Projects[];
-  };
 }
