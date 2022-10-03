@@ -1,3 +1,8 @@
-<p *ngFor="let tempProjects of projects">
-    {{tempProjects.title}}
-</p>
+<div class="projects">
+    <h2>These are all the projects</h2>
+    <p *ngFor="let tempProjects of projects">
+        {{ tempProjects.title }}
+        {{ tempProjects.href}}
+        {{ tempProjects.description}}
+    </p>
+</div>

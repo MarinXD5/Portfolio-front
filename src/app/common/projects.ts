@@ -1,3 +1,5 @@
 export interface Projects {
-    title: string
+    title: string,
+    href: string,
+    description: string
 }
