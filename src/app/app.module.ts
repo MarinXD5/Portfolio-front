@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProjectsService } from './services/projects.service';
 import { ProjectListComponent } from './components/project-list/project-list.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectListComponent
+    ProjectListComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
