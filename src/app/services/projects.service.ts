@@ -7,9 +7,9 @@ import { Observable } from 'rxjs';
 export class ProjectsService {
   private allProjectsURL: string = "http://localhost:8080/list/projects";
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
   getAllProjects(): Observable<Projects[]>{
-    return this.httpClient.get<Projects[]>(this.allProjectsURL);
+    return this.http.get<Projects[]>(this.allProjectsURL);
   }
 }

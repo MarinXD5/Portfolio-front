@@ -7,12 +7,14 @@ import { ProjectsService } from './services/projects.service';
 import { ProjectListComponent } from './components/project-list/project-list.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AutobiographyComponent } from './components/autobiography/autobiography.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectListComponent,
-    ContactComponent
+    ContactComponent,
+    AutobiographyComponent
   ],
   imports: [
     BrowserModule,

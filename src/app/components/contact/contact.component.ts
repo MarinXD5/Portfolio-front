@@ -9,10 +9,10 @@ import { ContactService } from 'app/services/contact.service';
 })
 export class ContactComponent implements OnInit {
 
-  contact: Contact | undefined;
+  contact: Contact[] = [];
   constructor(private contactService: ContactService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.listContact();
   }
 

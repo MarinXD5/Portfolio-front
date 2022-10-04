@@ -1,17 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Contact } from 'app/common/contact';
+import { Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
-
+@Injectable()
 export class ContactService {
+  private contactURL: string = "http://localhost:8080/contact";
 
-  private contactURL: string = "localhost:8080/contact";
   constructor(private http: HttpClient) { }
 
-  getContact(){
-    return this.http.get<Contact>(this.contactURL);
+  getContact(): Observable<Contact[]>{
+    return this.http.get<Contact[]>(this.contactURL);
   }
 }
