@@ -10,6 +10,7 @@ import { ContactService } from 'app/services/contact.service';
 export class ContactComponent implements OnInit {
 
   contact: Contact[] = [];
+
   constructor(private contactService: ContactService) { }
 
   ngOnInit() {
@@ -17,8 +18,8 @@ export class ContactComponent implements OnInit {
   }
 
   listContact(){
-    this.contactService.getContact().subscribe(
-        data => this.contact = data);
+    this.contactService.getContact().subscribe(data => 
+      this.contact = data);
   }
 
 }

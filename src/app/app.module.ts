@@ -8,6 +8,7 @@ import { ProjectListComponent } from './components/project-list/project-list.com
 import { ContactComponent } from './components/contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AutobiographyComponent } from './components/autobiography/autobiography.component';
+import { ContactService } from './services/contact.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { AutobiographyComponent } from './components/autobiography/autobiography
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [ProjectsService],
+  providers: [ProjectsService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
