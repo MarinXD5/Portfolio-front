@@ -6,9 +6,14 @@
   <a href="/contact">Contact me!</a>
 </div>
 
-<script src = "script.js"></script>
+<div>
+  <button onclick = "openNav().innerHTML" class = "sidenavigation">Open Side Navigation</button>
 
-<button onclick = "openNav()">Open Side Navigation</button>
-
+  <script>
+    function openNav(){
+      document.getElementsByClassName("sidenavigation").style.width = "250px";
+    }
+  </script>
+</div>
 
 <router-outlet></router-outlet>
