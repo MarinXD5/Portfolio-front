@@ -1,19 +1,8 @@
 <div id = "sidenavigation" class = "sidenav">
-  <a href="javascrip:void(0)" class = "closebtn" onclick="closeNav()">&times;</a>
   <a href="/projects">Projects</a>
   <a href="/autobiography">Autobiography</a>
   <a href="#">PLACEHOLDER</a>
   <a href="/contact">Contact me!</a>
-</div>
-
-<div>
-  <button onclick = "openNav().innerHTML" class = "sidenavigation">Open Side Navigation</button>
-
-  <script>
-    function openNav(){
-      document.getElementsByClassName("sidenavigation").style.width = "250px";
-    }
-  </script>
 </div>
 
 <router-outlet></router-outlet>
