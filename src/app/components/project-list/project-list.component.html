@@ -3,7 +3,7 @@
     <h2>These are all the projects</h2>
     <p *ngFor="let tempProjects of projects">
       {{ tempProjects.title }}
-      {{ tempProjects.href}}
+      <a href = "{{ tempProjects.href}}">{{ tempProjects.title }}</a>
       {{ tempProjects.description}}
     </p>
 

@@ -10,13 +10,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AutobiographyComponent } from './components/autobiography/autobiography.component';
 import { ContactService } from './services/contact.service';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectListComponent,
     ContactComponent,
-    AutobiographyComponent
+    AutobiographyComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
