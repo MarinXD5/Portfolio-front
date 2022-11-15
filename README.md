@@ -1,27 +1,7 @@
-# AngularPortfolio
+# Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+This project created using Java Spring Boot & Angular in VSC and Eclipse Community Edition IDE.
 
-## Development server
+## Project idea
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Creative responsive portfolio using Java Spring Boot & Angular. The application will be fully independent with no addition to code if the new project has been added to https://github.com/MarinXD%/Programiranje once this web application has been fully launched. Once this application is finished it will be hosted on public server to whom anyone can access and review the website. The project code will stay open-source and non copyright. Everyone can use the both idea and code.
