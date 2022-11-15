@@ -9,7 +9,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AutobiographyComponent } from './components/autobiography/autobiography.component';
 import { ContactService } from './services/contact.service';
-import { MatSidenavModule } from '@angular/material/sidenav';
+//import { MatSidenavModule } from '@angular/material/sidenav';
 import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
@@ -24,7 +24,7 @@ import { HomeComponent } from './components/home/home.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    MatSidenavModule
+    //MatSidenavModule
   ],
   providers: [ProjectsService, ContactService],
   bootstrap: [AppComponent]

@@ -9,7 +9,7 @@ export class ContactService {
 
   constructor(private http: HttpClient) { }
 
-  getContact(): Observable<Contact[]>{
-    return this.http.get<Contact[]>(this.contactURL);
+  getContact(): Observable<Contact>{
+    return this.http.get<Contact>(this.contactURL);
   }
 }
